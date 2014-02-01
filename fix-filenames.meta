@@ -1,0 +1,5 @@
+((synopsis "\"Fix\" filenames by using sane characters only")
+ (author "Mario Domenech Goulart")
+ (category tools)
+ (license "BSD")
+ (depends accents-substitute))

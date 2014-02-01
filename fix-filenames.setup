@@ -1,0 +1,7 @@
+;; -*- scheme -*-
+(compile -d0 -O3 -J fix-filenames.scm)
+
+(install-program
+ 'fix-filenames
+ '("fix-filenames")
+ '((version "0.0.1")))
