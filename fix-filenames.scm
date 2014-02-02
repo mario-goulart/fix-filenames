@@ -42,7 +42,9 @@
                                             fixed-filename)))
         (debug "~S -> ~S" file-path fixed-file-path)
         (unless *dry-run?*
-          (rename-file file-path fixed-file-path))))))
+          (if (file-exists? fixed-file-path)
+              (debug "=== Not renaming ~a since ~a exists" file-path fixed-file-path)
+              (rename-file file-path fixed-file-path)))))))
 
 (define (path-depth path)
   (string-count path (lambda (c)
