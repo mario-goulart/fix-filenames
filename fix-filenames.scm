@@ -2,8 +2,7 @@
 
 (import chicken scheme)
 (use data-structures files posix srfi-1 srfi-13 extras)
-(use (rename accents-substitute-latin1 (accents-substitute accents-substitute-latin1))
-     (rename accents-substitute-utf8 (accents-substitute accents-substitute-utf8)))
+(use accents-substitute)
 
 (define *dry-run?* #f)
 
