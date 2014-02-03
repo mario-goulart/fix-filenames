@@ -2,4 +2,4 @@
  (author "Mario Domenech Goulart")
  (category tools)
  (license "BSD")
- (depends (accents-substitute "0.4")))
+ (depends (accents-substitute "0.5")))
